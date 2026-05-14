@@ -8,11 +8,11 @@ spec:
   source:
     repoURL: https://github.com/SonamShark/argo.git
     targetRevision: main
-    #path: . 
+    path: . 
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     automated:
-      #prune: true
+      prune: true
       selfHeal: true
